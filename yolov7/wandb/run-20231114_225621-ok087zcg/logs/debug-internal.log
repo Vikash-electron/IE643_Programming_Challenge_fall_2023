@@ -1,0 +1,20 @@
+2023-11-14 22:56:21,287 INFO    StreamThr :789937 [internal.py:wandb_internal():86] W&B internal server running at pid: 789937, started at: 2023-11-14 22:56:21.286683
+2023-11-14 22:56:21,289 DEBUG   HandlerThread:789937 [handler.py:handle_request():146] handle_request: status
+2023-11-14 22:56:21,293 INFO    WriterThread:789937 [datastore.py:open_for_write():85] open: /home/vivek.trivedi/yolov7/wandb/run-20231114_225621-ok087zcg/run-ok087zcg.wandb
+2023-11-14 22:56:21,294 DEBUG   SenderThread:789937 [sender.py:send():380] send: header
+2023-11-14 22:56:21,322 DEBUG   SenderThread:789937 [sender.py:send():380] send: run
+2023-11-14 22:56:21,380 INFO    SenderThread:789937 [sender.py:_maybe_setup_resume():759] checking resume status for None/YOLOR/ok087zcg
+2023-11-14 22:56:22,897 DEBUG   HandlerThread:789937 [handler.py:handle_request():146] handle_request: shutdown
+2023-11-14 22:56:22,897 INFO    HandlerThread:789937 [handler.py:finish():866] shutting down handler
+2023-11-14 22:56:23,323 INFO    WriterThread:789937 [datastore.py:close():294] close: /home/vivek.trivedi/yolov7/wandb/run-20231114_225621-ok087zcg/run-ok087zcg.wandb
+2023-11-14 22:56:25,556 INFO    SenderThread:789937 [dir_watcher.py:__init__():211] watching files in: /home/vivek.trivedi/yolov7/wandb/run-20231114_225621-ok087zcg/files
+2023-11-14 22:56:25,556 INFO    SenderThread:789937 [sender.py:_start_run_threads():1122] run started: ok087zcg with start time 1699982781.289785
+2023-11-14 22:56:25,556 INFO    SenderThread:789937 [sender.py:finish():1534] shutting down sender
+2023-11-14 22:56:25,556 INFO    SenderThread:789937 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-11-14 22:56:26,558 INFO    SenderThread:789937 [dir_watcher.py:finish():388] scan: /home/vivek.trivedi/yolov7/wandb/run-20231114_225621-ok087zcg/files
+2023-11-14 22:56:26,559 INFO    SenderThread:789937 [dir_watcher.py:finish():402] scan save: /home/vivek.trivedi/yolov7/wandb/run-20231114_225621-ok087zcg/files/config.yaml config.yaml
+2023-11-14 22:56:26,559 INFO    SenderThread:789937 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-14 22:56:26,559 INFO    SenderThread:789937 [file_pusher.py:join():181] waiting for file pusher
+2023-11-14 22:56:38,398 INFO    wandb-upload_0:789937 [upload_job.py:push():131] Uploaded file /home/vivek.trivedi/yolov7/wandb/run-20231114_225621-ok087zcg/files/config.yaml
+2023-11-14 22:56:39,080 INFO    SenderThread:789937 [file_stream.py:finish():595] file stream finish called
+2023-11-14 22:56:44,933 INFO    SenderThread:789937 [file_stream.py:finish():599] file stream finish is done

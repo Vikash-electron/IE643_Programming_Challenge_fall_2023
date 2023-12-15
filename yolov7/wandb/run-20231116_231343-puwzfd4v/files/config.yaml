@@ -1,0 +1,273 @@
+wandb_version: 1
+
+weights:
+  desc: null
+  value: runs/train/yolov7-e6e54/weights/best.pt
+cfg:
+  desc: null
+  value: cfg/training/yolov7-e6e.yaml
+data:
+  desc: null
+  value: data/data.yaml
+hyp:
+  desc: null
+  value:
+    lr0: 0.001
+    lrf: 0.2
+    momentum: 0.937
+    weight_decay: 0.0005
+    warmup_epochs: 3.0
+    warmup_momentum: 0.8
+    warmup_bias_lr: 0.1
+    box: 0.05
+    cls: 0.3
+    cls_pw: 1.0
+    obj: 0.7
+    obj_pw: 1.0
+    iou_t: 0.2
+    anchor_t: 4.0
+    fl_gamma: 0.0
+    hsv_h: 0.015
+    hsv_s: 0.7
+    hsv_v: 0.4
+    degrees: 5.0
+    translate: 0.2
+    scale: 0.9
+    shear: 0.0
+    perspective: 0.0
+    flipud: 0.0
+    fliplr: 0.5
+    mosaic: 1.0
+    mixup: 0.05
+    copy_paste: 0.0
+    paste_in: 0.15
+    loss_ota: 1
+epochs:
+  desc: null
+  value: 1
+batch_size:
+  desc: null
+  value: 4
+img_size:
+  desc: null
+  value:
+  - 640
+  - 960
+rect:
+  desc: null
+  value: false
+resume:
+  desc: null
+  value: false
+nosave:
+  desc: null
+  value: false
+notest:
+  desc: null
+  value: false
+noautoanchor:
+  desc: null
+  value: false
+evolve:
+  desc: null
+  value: false
+bucket:
+  desc: null
+  value: ''
+cache_images:
+  desc: null
+  value: false
+image_weights:
+  desc: null
+  value: false
+device:
+  desc: null
+  value: ''
+multi_scale:
+  desc: null
+  value: false
+single_cls:
+  desc: null
+  value: false
+adam:
+  desc: null
+  value: false
+sync_bn:
+  desc: null
+  value: false
+local_rank:
+  desc: null
+  value: -1
+workers:
+  desc: null
+  value: 8
+project:
+  desc: null
+  value: runs/train
+entity:
+  desc: null
+  value: null
+name:
+  desc: null
+  value: yolov7-e6e
+exist_ok:
+  desc: null
+  value: false
+quad:
+  desc: null
+  value: false
+linear_lr:
+  desc: null
+  value: false
+label_smoothing:
+  desc: null
+  value: 0.0
+upload_dataset:
+  desc: null
+  value: false
+bbox_interval:
+  desc: null
+  value: -1
+save_period:
+  desc: null
+  value: -1
+artifact_alias:
+  desc: null
+  value: latest
+v5_metric:
+  desc: null
+  value: false
+world_size:
+  desc: null
+  value: 1
+global_rank:
+  desc: null
+  value: -1
+save_dir:
+  desc: null
+  value: runs/train/yolov7-e6e57
+total_batch_size:
+  desc: null
+  value: 4
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.18
+    cli_version: 0.15.12
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1700156623.406861
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      2:
+      - 1
+      - 41
+      - 55
+      3:
+      - 5
+      - 13
+      - 14
+      - 16
+      - 19
+      - 23
+      4: 3.8.18
+      5: 0.15.12
+      8:
+      - 5
+      13: linux-x86_64
+opt:
+  desc: null
+  value:
+    cfg: cfg/training/yolov7-e6e.yaml
+    hyp:
+      box: 0.05
+      cls: 0.3
+      lr0: 0.001
+      lrf: 0.2
+      obj: 0.7
+      hsv_h: 0.015
+      hsv_s: 0.7
+      hsv_v: 0.4
+      iou_t: 0.2
+      mixup: 0.05
+      scale: 0.9
+      shear: 0
+      cls_pw: 1
+      fliplr: 0.5
+      flipud: 0
+      mosaic: 1
+      obj_pw: 1
+      degrees: 5
+      anchor_t: 4
+      fl_gamma: 0
+      loss_ota: 1
+      momentum: 0.937
+      paste_in: 0.15
+      translate: 0.2
+      copy_paste: 0
+      perspective: 0
+      weight_decay: 0.0005
+      warmup_epochs: 3
+      warmup_bias_lr: 0.1
+      warmup_momentum: 0.8
+    adam: false
+    data: data/data.yaml
+    name: yolov7-e6e
+    quad: false
+    rect: false
+    bucket: ''
+    device: ''
+    entity: null
+    epochs: 10
+    evolve: false
+    nosave: false
+    notest: false
+    resume: false
+    project: runs/train
+    sync_bn: false
+    weights: runs/train/yolov7-e6e48/weights/best.pt
+    workers: 8
+    exist_ok: false
+    img_size:
+    - 640
+    - 960
+    save_dir: runs/train/yolov7-e6e54
+    linear_lr: false
+    v5_metric: false
+    batch_size: 4
+    local_rank: -1
+    single_cls: false
+    world_size: 1
+    global_rank: -1
+    multi_scale: false
+    save_period: -1
+    cache_images: false
+    noautoanchor: false
+    bbox_interval: -1
+    image_weights: false
+    artifact_alias: latest
+    upload_dataset: false
+    label_smoothing: 0
+    total_batch_size: 4
+data_dict:
+  desc: null
+  value:
+    nc: 10
+    val: /home/vivek.trivedi/synthetic_data_for_challenge/val/images
+    test: /home/vivek.trivedi/synthetic_data_for_challenge/val/images
+    names:
+    - pedestrian
+    - people
+    - bicycle
+    - car
+    - van
+    - truck
+    - tricycle
+    - awning-tricycle
+    - bus
+    - motor
+    train: /home/vivek.trivedi/synthetic_data_for_challenge/images

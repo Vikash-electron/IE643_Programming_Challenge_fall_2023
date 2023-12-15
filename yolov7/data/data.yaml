@@ -1,0 +1,6 @@
+train: /home/vivek.trivedi/synthetic_data_for_challenge/images
+val: /home/vivek.trivedi/synthetic_data_for_challenge/test/images
+test: /home/vivek.trivedi/synthetic_data_for_challenge/test/images
+
+nc: 10
+names: ["pedestrian", "people", "bicycle", "car", "van", "truck", "tricycle", "awning-tricycle", "bus", "motor"]

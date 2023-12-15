@@ -1,0 +1,177 @@
+2023-11-16 23:25:17,272 INFO    StreamThr :2977975 [internal.py:wandb_internal():86] W&B internal server running at pid: 2977975, started at: 2023-11-16 23:25:17.270529
+2023-11-16 23:25:17,273 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: status
+2023-11-16 23:25:17,276 INFO    WriterThread:2977975 [datastore.py:open_for_write():85] open: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/run-puwzfd4v.wandb
+2023-11-16 23:25:17,278 DEBUG   SenderThread:2977975 [sender.py:send():380] send: header
+2023-11-16 23:25:17,333 DEBUG   SenderThread:2977975 [sender.py:send():380] send: run
+2023-11-16 23:25:17,389 INFO    SenderThread:2977975 [sender.py:_maybe_setup_resume():759] checking resume status for None/YOLOR/puwzfd4v
+2023-11-16 23:25:17,852 INFO    SenderThread:2977975 [sender.py:_maybe_setup_resume():831] configured resuming with: ResumeState(resumed=True,step=6,history=6,events=2074,output=325,runtime=62243.728793,wandb_runtime=62238,summary={'train/cls_loss': 0.008048657327890396, '_timestamp': 1700042071.9233184, 'val/obj_loss': 0.059631966054439545, 'metrics/mAP_0.5': 0.6836950908678141, 'x/lr2': 0.0007236067977499789, 'val/cls_loss': 0.017376620322465897, 'Mosaics': {'format': 'jpg', 'height': 1280, 'width': 1280, '_type': 'images/separated', 'captions': ['train_batch0.jpg', 'train_batch4.jpg', 'train_batch2.jpg', 'train_batch5.jpg', 'train_batch1.jpg', 'train_batch7.jpg', 'train_batch3.jpg', 'train_batch6.jpg', 'train_batch8.jpg', 'train_batch9.jpg'], 'count': 10, 'filenames': ['media/images/Mosaics_0_bfb5c97071be1fc11ca4.jpg', 'media/images/Mosaics_0_db49367b386149fa557b.jpg', 'media/images/Mosaics_0_64e883aed5fa8d356112.jpg', 'media/images/Mosaics_0_14447f94029250bf1cda.jpg', 'media/images/Mosaics_0_64677d516826a46e1a46.jpg', 'media/images/Mosaics_0_969ca10d8f0da53f815e.jpg', 'media/images/Mosaics_0_e4b3787f91f60d6a0fbe.jpg', 'media/images/Mosaics_0_ad66888a8c8065e3f9d0.jpg', 'media/images/Mosaics_0_4ba79290e9cec6c9bc88.jpg', 'media/images/Mosaics_0_bc3b58c8f2570ecbe843.jpg']}, '_step': 5, 'metrics/precision': 0.7280741173437371, 'train/obj_loss': 0.0401090607047081, '_runtime': 57902.500296354294, 'metrics/recall': 0.6498432663123123, 'x/lr1': 0.0007236067977499789, 'Bounding Box Debugger/Images': {'width': 1024, 'count': 16, 'filenames': ['media/images/Bounding Box Debugger/Images_5_cc48ddc731b5d32914db.png', 'media/images/Bounding Box Debugger/Images_5_d261bd1b44160748032a.png', 'media/images/Bounding Box Debugger/Images_5_af4a464b8439b89aff55.png', 'media/images/Bounding Box Debugger/Images_5_d061f5f47900f0058679.png', 'media/images/Bounding Box Debugger/Images_5_84dbb17a1e14a11c03bc.png', 'media/images/Bounding Box Debugger/Images_5_fd4e8255e7181f334855.png', 'media/images/Bounding Box Debugger/Images_5_dbee8a4eeba7910f864b.png', 'media/images/Bounding Box Debugger/Images_5_9a7526beec2b4090cb0c.png', 'media/images/Bounding Box Debugger/Images_5_d7b2aa390d8788d18b7e.png', 'media/images/Bounding Box Debugger/Images_5_e69df892eea1abed0b73.png', 'media/images/Bounding Box Debugger/Images_5_54a1f81fccceb16fa31e.png', 'media/images/Bounding Box Debugger/Images_5_f4b9fe59f6969b0f48fb.png', 'media/images/Bounding Box Debugger/Images_5_c8d388826b186751cbe7.png', 'media/images/Bounding Box Debugger/Images_5_21914648305405388b9a.png', 'media/images/Bounding Box Debugger/Images_5_f285fa48173aaac2a9f8.png', 'media/images/Bounding Box Debugger/Images_5_1a50076d8b0683c8d896.png'], '_type': 'images/separated', 'height': 576, 'all_boxes': [{'predictions': {'sha256': '4357a0ab890704e63786f34294934544f25bbe68fe69b62a86ff6df23bf3b80b', 'size': 57669, '_type': 'boxes2D', 'path': 'media/metadata/boxes2D/Bounding Box Debugger/Images_5_4357a0ab890704e63786.boxes2D.json'}}, {'predictions': {'_type': 'boxes2D', 'path': 'media/metadata/boxes2D/Bounding Box Debugger/Images_5_7a3821c5e1c1a9c25437.boxes2D.json', 'sha256': '7a3821c5e1c1a9c25437138b44d780824c73565de4e84716228349bd666254be', 'size': 56052}}, {'predictions': {'_type': 'boxes2D', 'path': 'media/metadata/boxes2D/Bounding Box Debugger/Images_5_eea4cafd86c8ef318cf7.boxes2D.json', 'sha256': 'eea4cafd86c8ef318cf7c1c8d21b98363f6d691b44deafe1c19aeaedc51b43d5', 'size': 56150}}, {'predictions': {'_type': 'boxes2D', 'path': 'media/metadata/boxes2D/Bounding Box Debugger/Images_5_406f2c7899ff4828a6b6.boxes2D.json', 'sha256': '406f2c7899ff4828a6b6b89dda614d1224bb4716cb02beb4543116ce9b28cacc', 'size': 55969}}, {'predictions': {'size': 55955, '_type': 'boxes2D', 'path': 'media/metadata/boxes2D/Bounding Box Debugger/Images_5_89ae738415f1952e70f3.boxes2D.json', 'sha256': '89ae738415f1952e70f3364ac4200269994c39e15d7f7e0557fd62ec795af40f'}}, {'predictions': {'_type': 'boxes2D', 'path': 'media/metadata/boxes2D/Bounding Box Debugger/Images_5_adfd45618dcac88c0219.boxes2D.json', 'sha256': 'adfd45618dcac88c0219790153cd1404fd29ae8080685cc9fdc528a3b291f961', 'size': 55884}}, {'predictions': {'path': 'media/metadata/boxes2D/Bounding Box Debugger/Images_5_2720d0501ca116122fb6.boxes2D.json', 'sha256': '2720d0501ca116122fb69d70d79006075e877369ee2a78aeddbd00c8add3dc77', 'size': 56499, '_type': 'boxes2D'}}, {'predictions': {'_type': 'boxes2D', 'path': 'media/metadata/boxes2D/Bounding Box Debugger/Images_5_b8bac25729c7cae89b62.boxes2D.json', 'sha256': 'b8bac25729c7cae89b6238d1d4d6deb35dad0a3cec805b51f6b6fffeb775c7ef', 'size': 56535}}, {'predictions': {'_type': 'boxes2D', 'path': 'media/metadata/boxes2D/Bounding Box Debugger/Images_5_ce6d9db2572ccb3bf99f.boxes2D.json', 'sha256': 'ce6d9db2572ccb3bf99f898324101ba4a78ccdf2769e7e229bc599a1cda99e2a', 'size': 56820}}, {'predictions': {'_type': 'boxes2D', 'path': 'media/metadata/boxes2D/Bounding Box Debugger/Images_5_f2ce989f260410da6d6e.boxes2D.json', 'sha256': 'f2ce989f260410da6d6e6c22af7a6dcc26ee6abea56b60457ef81940f96c540d', 'size': 56157}}, {'predictions': {'size': 56317, '_type': 'boxes2D', 'path': 'media/metadata/boxes2D/Bounding Box Debugger/Images_5_2c97cf3569adde9885a6.boxes2D.json', 'sha256': '2c97cf3569adde9885a645c6b167d7830f0be444668049701dfb3cf007f8ff90'}}, {'predictions': {'_type': 'boxes2D', 'path': 'media/metadata/boxes2D/Bounding Box Debugger/Images_5_8d99baae97469ec77543.boxes2D.json', 'sha256': '8d99baae97469ec77543d4e8dd0635fdd6716cf404d047998f8917c9126b94a0', 'size': 56312}}, {'predictions': {'_type': 'boxes2D', 'path': 'media/metadata/boxes2D/Bounding Box Debugger/Images_5_91929ca59a939286b62f.boxes2D.json', 'sha256': '91929ca59a939286b62fd21e3a69fa434af2163f3599c2e42659a7a7011e32f5', 'size': 56282}}, {'predictions': {'_type': 'boxes2D', 'path': 'media/metadata/boxes2D/Bounding Box Debugger/Images_5_1a58339f25fc6d6c9845.boxes2D.json', 'sha256': '1a58339f25fc6d6c9845bc7c24330fb0744614a3994f40f1a73a193432e0b5ab', 'size': 56397}}, {'predictions': {'size': 56429, '_type': 'boxes2D', 'path': 'media/metadata/boxes2D/Bounding Box Debugger/Images_5_e7a3d0c4ed35a61d99ab.boxes2D.json', 'sha256': 'e7a3d0c4ed35a61d99abb07aac9157f47d1e436f03051985fc90f554faf253e5'}}, {'predictions': {'path': 'media/metadata/boxes2D/Bounding Box Debugger/Images_5_9147d1adb09792f6f3be.boxes2D.json', 'sha256': '9147d1adb09792f6f3befb353a7f871ca4a781f703e6418e6929ccb474e3b71a', 'size': 56143, '_type': 'boxes2D'}}], 'captions': ['0000003_00231_d_0000016.jpg', '0000293_01401_d_0000929.jpg', '0000293_02401_d_0000934.jpg', '0000293_02601_d_0000935.jpg', '0000293_02801_d_0000936.jpg', '0000293_03401_d_0000939.jpg', '0000297_00001_d_0000057.jpg', '0000297_00201_d_0000058.jpg', '0000297_01401_d_0000064.jpg', '0000300_00001_d_0000138.jpg', '0000300_00601_d_0000141.jpg', '0000300_01001_d_0000143.jpg', '0000300_01201_d_0000144.jpg', '0000300_01801_d_0000147.jpg', '0000300_02001_d_0000148.jpg', '0000300_02401_d_0000150.jpg'], 'format': 'png'}, 'val/box_loss': 0.07132074236869812, '_wandb': {'runtime': 62238}, 'metrics/mAP_0.5:0.95': 0.4094764113651904, 'train/box_loss': 0.04237386956810951, 'x/lr0': 0.0007236067977499789},config={'cfg': {'desc': None, 'value': 'cfg/training/yolov7-e6e.yaml'}, 'hyp': {'desc': None, 'value': {'box': 0.05, 'cls': 0.3, 'lr0': 0.001, 'lrf': 0.2, 'obj': 0.7, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'iou_t': 0.2, 'mixup': 0.05, 'scale': 0.9, 'shear': 0, 'cls_pw': 1, 'fliplr': 0.5, 'flipud': 0, 'mosaic': 1, 'obj_pw': 1, 'degrees': 5, 'anchor_t': 4, 'fl_gamma': 0, 'loss_ota': 1, 'momentum': 0.937, 'paste_in': 0.15, 'translate': 0.2, 'copy_paste': 0, 'perspective': 0, 'weight_decay': 0.0005, 'warmup_epochs': 3, 'warmup_bias_lr': 0.1, 'warmup_momentum': 0.8}}, 'opt': {'desc': None, 'value': {'cfg': 'cfg/training/yolov7-e6e.yaml', 'hyp': {'box': 0.05, 'cls': 0.3, 'lr0': 0.001, 'lrf': 0.2, 'obj': 0.7, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'iou_t': 0.2, 'mixup': 0.05, 'scale': 0.9, 'shear': 0, 'cls_pw': 1, 'fliplr': 0.5, 'flipud': 0, 'mosaic': 1, 'obj_pw': 1, 'degrees': 5, 'anchor_t': 4, 'fl_gamma': 0, 'loss_ota': 1, 'momentum': 0.937, 'paste_in': 0.15, 'translate': 0.2, 'copy_paste': 0, 'perspective': 0, 'weight_decay': 0.0005, 'warmup_epochs': 3, 'warmup_bias_lr': 0.1, 'warmup_momentum': 0.8}, 'adam': False, 'data': 'data/data.yaml', 'name': 'yolov7-e6e', 'quad': False, 'rect': False, 'bucket': '', 'device': '', 'entity': None, 'epochs': 10, 'evolve': False, 'nosave': False, 'notest': False, 'resume': False, 'project': 'runs/train', 'sync_bn': False, 'weights': 'runs/train/yolov7-e6e48/weights/best.pt', 'workers': 8, 'exist_ok': False, 'img_size': [640, 960], 'save_dir': 'runs/train/yolov7-e6e54', 'linear_lr': False, 'v5_metric': False, 'batch_size': 4, 'local_rank': -1, 'single_cls': False, 'world_size': 1, 'global_rank': -1, 'multi_scale': False, 'save_period': -1, 'cache_images': False, 'noautoanchor': False, 'bbox_interval': -1, 'image_weights': False, 'artifact_alias': 'latest', 'upload_dataset': False, 'label_smoothing': 0, 'total_batch_size': 4}}, 'adam': {'desc': None, 'value': False}, 'data': {'desc': None, 'value': 'data/data.yaml'}, 'name': {'desc': None, 'value': 'yolov7-e6e'}, 'quad': {'desc': None, 'value': False}, 'rect': {'desc': None, 'value': False}, '_wandb': {'desc': None, 'value': {'t': {'1': [1, 41, 55], '2': [1, 41, 55], '3': [5, 13, 14, 16, 19, 23], '4': '3.8.18', '5': '0.15.12', '8': [5], '13': 'linux-x86_64'}, 'framework': 'torch', 'start_time': 1700156623.406861, 'cli_version': '0.15.12', 'is_jupyter_run': False, 'python_version': '3.8.18', 'is_kaggle_kernel': False}}, 'bucket': {'desc': None, 'value': ''}, 'device': {'desc': None, 'value': ''}, 'entity': {'desc': None, 'value': None}, 'epochs': {'desc': None, 'value': 1}, 'evolve': {'desc': None, 'value': False}, 'nosave': {'desc': None, 'value': False}, 'notest': {'desc': None, 'value': False}, 'resume': {'desc': None, 'value': False}, 'project': {'desc': None, 'value': 'runs/train'}, 'sync_bn': {'desc': None, 'value': False}, 'weights': {'desc': None, 'value': 'runs/train/yolov7-e6e54/weights/best.pt'}, 'workers': {'desc': None, 'value': 8}, 'exist_ok': {'desc': None, 'value': False}, 'img_size': {'desc': None, 'value': [640, 960]}, 'save_dir': {'desc': None, 'value': 'runs/train/yolov7-e6e57'}, 'data_dict': {'desc': None, 'value': {'nc': 10, 'val': '/home/vivek.trivedi/synthetic_data_for_challenge/val/images', 'test': '/home/vivek.trivedi/synthetic_data_for_challenge/val/images', 'names': ['pedestrian', 'people', 'bicycle', 'car', 'van', 'truck', 'tricycle', 'awning-tricycle', 'bus', 'motor'], 'train': '/home/vivek.trivedi/synthetic_data_for_challenge/images'}}, 'linear_lr': {'desc': None, 'value': False}, 'v5_metric': {'desc': None, 'value': False}, 'batch_size': {'desc': None, 'value': 4}, 'local_rank': {'desc': None, 'value': -1}, 'single_cls': {'desc': None, 'value': False}, 'world_size': {'desc': None, 'value': 1}, 'global_rank': {'desc': None, 'value': -1}, 'multi_scale': {'desc': None, 'value': False}, 'save_period': {'desc': None, 'value': -1}, 'cache_images': {'desc': None, 'value': False}, 'noautoanchor': {'desc': None, 'value': False}, 'bbox_interval': {'desc': None, 'value': -1}, 'image_weights': {'desc': None, 'value': False}, 'artifact_alias': {'desc': None, 'value': 'latest'}, 'upload_dataset': {'desc': None, 'value': False}, 'label_smoothing': {'desc': None, 'value': 0}, 'total_batch_size': {'desc': None, 'value': 4}})
+2023-11-16 23:25:18,629 INFO    SenderThread:2977975 [dir_watcher.py:__init__():211] watching files in: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files
+2023-11-16 23:25:18,629 INFO    SenderThread:2977975 [sender.py:_start_run_threads():1122] run started: puwzfd4v with start time 1700095073.545069
+2023-11-16 23:25:18,629 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: summary_record
+2023-11-16 23:25:18,637 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: check_version
+2023-11-16 23:25:18,669 INFO    SenderThread:2977975 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-16 23:25:18,670 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: check_version
+2023-11-16 23:25:18,876 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: run_start
+2023-11-16 23:25:19,102 DEBUG   HandlerThread:2977975 [system_info.py:__init__():32] System info init
+2023-11-16 23:25:19,102 DEBUG   HandlerThread:2977975 [system_info.py:__init__():47] System info init done
+2023-11-16 23:25:19,102 INFO    HandlerThread:2977975 [system_monitor.py:start():194] Starting system monitor
+2023-11-16 23:25:19,102 INFO    SystemMonitor:2977975 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-16 23:25:19,103 INFO    SystemMonitor:2977975 [interfaces.py:start():190] Started cpu monitoring
+2023-11-16 23:25:19,103 INFO    SystemMonitor:2977975 [interfaces.py:start():190] Started disk monitoring
+2023-11-16 23:25:19,104 INFO    SystemMonitor:2977975 [interfaces.py:start():190] Started gpu monitoring
+2023-11-16 23:25:19,105 INFO    SystemMonitor:2977975 [interfaces.py:start():190] Started memory monitoring
+2023-11-16 23:25:19,105 INFO    SystemMonitor:2977975 [interfaces.py:start():190] Started network monitoring
+2023-11-16 23:25:19,122 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-16 23:25:19,122 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: stop_status
+2023-11-16 23:25:19,124 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-16 23:25:19,427 DEBUG   SenderThread:2977975 [sender.py:send():380] send: telemetry
+2023-11-16 23:25:19,631 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_created():271] file/dir created: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/wandb-summary.json
+2023-11-16 23:25:20,632 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_created():271] file/dir created: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:25:22,635 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:25:23,162 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 23:25:28,162 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 23:25:33,163 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 23:25:35,009 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-16 23:25:35,009 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-16 23:25:35,010 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: stop_status
+2023-11-16 23:25:38,375 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 23:25:43,376 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 23:25:48,614 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 23:25:48,729 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:25:49,781 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/config.yaml
+2023-11-16 23:25:54,781 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 23:25:56,972 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-16 23:25:56,973 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-16 23:25:56,974 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: stop_status
+2023-11-16 23:25:58,942 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:26:00,352 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 23:26:05,352 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 23:26:08,951 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:26:10,464 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 23:26:10,953 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:26:11,968 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-16 23:26:11,970 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-16 23:26:11,971 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: stop_status
+2023-11-16 23:26:12,955 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:26:14,958 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:26:15,638 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 23:26:16,960 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:26:18,962 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:26:19,105 DEBUG   SystemMonitor:2977975 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-16 23:26:19,107 DEBUG   SenderThread:2977975 [sender.py:send():380] send: stats
+2023-11-16 23:26:20,738 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 23:26:20,964 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:26:22,966 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:26:24,968 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:26:25,763 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 23:26:26,968 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-16 23:26:26,970 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:26:26,971 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-16 23:26:26,971 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: stop_status
+2023-11-16 23:26:28,972 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:26:30,824 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 23:26:30,974 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:26:32,395 DEBUG   SenderThread:2977975 [sender.py:send():380] send: exit
+2023-11-16 23:26:32,395 INFO    SenderThread:2977975 [sender.py:send_exit():585] handling exit code: 255
+2023-11-16 23:26:32,395 INFO    SenderThread:2977975 [sender.py:send_exit():587] handling runtime: 62311
+2023-11-16 23:26:32,437 INFO    SenderThread:2977975 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-16 23:26:32,438 INFO    SenderThread:2977975 [sender.py:send_exit():593] send defer
+2023-11-16 23:26:32,438 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: defer
+2023-11-16 23:26:32,438 INFO    HandlerThread:2977975 [handler.py:handle_request_defer():172] handle defer: 0
+2023-11-16 23:26:32,438 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: defer
+2023-11-16 23:26:32,438 INFO    SenderThread:2977975 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-11-16 23:26:32,438 INFO    SenderThread:2977975 [sender.py:transition_state():613] send defer: 1
+2023-11-16 23:26:32,438 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: defer
+2023-11-16 23:26:32,438 INFO    HandlerThread:2977975 [handler.py:handle_request_defer():172] handle defer: 1
+2023-11-16 23:26:32,438 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: defer
+2023-11-16 23:26:32,438 INFO    SenderThread:2977975 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-11-16 23:26:32,438 INFO    SenderThread:2977975 [sender.py:transition_state():613] send defer: 2
+2023-11-16 23:26:32,438 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: defer
+2023-11-16 23:26:32,438 INFO    HandlerThread:2977975 [handler.py:handle_request_defer():172] handle defer: 2
+2023-11-16 23:26:32,438 INFO    HandlerThread:2977975 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-16 23:26:32,438 INFO    HandlerThread:2977975 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-16 23:26:32,439 DEBUG   SystemMonitor:2977975 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-16 23:26:32,439 DEBUG   SystemMonitor:2977975 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-16 23:26:32,440 INFO    HandlerThread:2977975 [interfaces.py:finish():202] Joined disk monitor
+2023-11-16 23:26:32,717 INFO    HandlerThread:2977975 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-16 23:26:32,717 INFO    HandlerThread:2977975 [interfaces.py:finish():202] Joined memory monitor
+2023-11-16 23:26:32,717 INFO    HandlerThread:2977975 [interfaces.py:finish():202] Joined network monitor
+2023-11-16 23:26:32,718 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: defer
+2023-11-16 23:26:32,718 INFO    SenderThread:2977975 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-11-16 23:26:32,718 INFO    SenderThread:2977975 [sender.py:transition_state():613] send defer: 3
+2023-11-16 23:26:32,718 DEBUG   SenderThread:2977975 [sender.py:send():380] send: stats
+2023-11-16 23:26:32,719 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: defer
+2023-11-16 23:26:32,719 INFO    HandlerThread:2977975 [handler.py:handle_request_defer():172] handle defer: 3
+2023-11-16 23:26:32,719 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: defer
+2023-11-16 23:26:32,719 INFO    SenderThread:2977975 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-11-16 23:26:32,719 INFO    SenderThread:2977975 [sender.py:transition_state():613] send defer: 4
+2023-11-16 23:26:32,719 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: defer
+2023-11-16 23:26:32,719 INFO    HandlerThread:2977975 [handler.py:handle_request_defer():172] handle defer: 4
+2023-11-16 23:26:32,719 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: defer
+2023-11-16 23:26:32,719 INFO    SenderThread:2977975 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-11-16 23:26:32,719 INFO    SenderThread:2977975 [sender.py:transition_state():613] send defer: 5
+2023-11-16 23:26:32,719 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: defer
+2023-11-16 23:26:32,719 INFO    HandlerThread:2977975 [handler.py:handle_request_defer():172] handle defer: 5
+2023-11-16 23:26:32,719 DEBUG   SenderThread:2977975 [sender.py:send():380] send: summary
+2023-11-16 23:26:32,722 INFO    SenderThread:2977975 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-16 23:26:32,722 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: defer
+2023-11-16 23:26:32,722 INFO    SenderThread:2977975 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-11-16 23:26:32,722 INFO    SenderThread:2977975 [sender.py:transition_state():613] send defer: 6
+2023-11-16 23:26:32,723 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: defer
+2023-11-16 23:26:32,723 INFO    HandlerThread:2977975 [handler.py:handle_request_defer():172] handle defer: 6
+2023-11-16 23:26:32,723 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: defer
+2023-11-16 23:26:32,723 INFO    SenderThread:2977975 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-11-16 23:26:32,723 INFO    SenderThread:2977975 [sender.py:transition_state():613] send defer: 7
+2023-11-16 23:26:32,723 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 23:26:32,723 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: defer
+2023-11-16 23:26:32,723 INFO    HandlerThread:2977975 [handler.py:handle_request_defer():172] handle defer: 7
+2023-11-16 23:26:32,723 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: defer
+2023-11-16 23:26:32,723 INFO    SenderThread:2977975 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-11-16 23:26:32,976 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/wandb-summary.json
+2023-11-16 23:26:32,977 INFO    Thread-12 :2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:26:33,396 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-16 23:26:34,057 INFO    SenderThread:2977975 [sender.py:transition_state():613] send defer: 8
+2023-11-16 23:26:34,057 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: poll_exit
+2023-11-16 23:26:34,057 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: defer
+2023-11-16 23:26:34,057 INFO    HandlerThread:2977975 [handler.py:handle_request_defer():172] handle defer: 8
+2023-11-16 23:26:34,057 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: defer
+2023-11-16 23:26:34,058 INFO    SenderThread:2977975 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-11-16 23:26:34,058 INFO    SenderThread:2977975 [job_builder.py:build():281] Attempting to build job artifact
+2023-11-16 23:26:34,058 INFO    SenderThread:2977975 [sender.py:transition_state():613] send defer: 9
+2023-11-16 23:26:34,058 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: defer
+2023-11-16 23:26:34,058 INFO    HandlerThread:2977975 [handler.py:handle_request_defer():172] handle defer: 9
+2023-11-16 23:26:34,058 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: defer
+2023-11-16 23:26:34,058 INFO    SenderThread:2977975 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-11-16 23:26:34,058 INFO    SenderThread:2977975 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-11-16 23:26:34,397 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-16 23:26:34,978 INFO    SenderThread:2977975 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:26:34,978 INFO    SenderThread:2977975 [dir_watcher.py:finish():388] scan: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files
+2023-11-16 23:26:34,979 INFO    SenderThread:2977975 [dir_watcher.py:finish():402] scan save: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/config.yaml config.yaml
+2023-11-16 23:26:34,979 INFO    SenderThread:2977975 [dir_watcher.py:finish():402] scan save: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/wandb-summary.json wandb-summary.json
+2023-11-16 23:26:34,979 INFO    SenderThread:2977975 [dir_watcher.py:finish():402] scan save: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log output.log
+2023-11-16 23:26:34,979 INFO    SenderThread:2977975 [sender.py:transition_state():613] send defer: 10
+2023-11-16 23:26:34,979 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: poll_exit
+2023-11-16 23:26:34,982 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: defer
+2023-11-16 23:26:34,983 INFO    HandlerThread:2977975 [handler.py:handle_request_defer():172] handle defer: 10
+2023-11-16 23:26:34,984 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: defer
+2023-11-16 23:26:34,985 INFO    SenderThread:2977975 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-11-16 23:26:34,985 INFO    SenderThread:2977975 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-16 23:26:35,397 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-16 23:26:35,398 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: poll_exit
+2023-11-16 23:26:36,398 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-16 23:26:36,399 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: poll_exit
+2023-11-16 23:26:37,399 DEBUG   HandlerThread:2977975 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-16 23:26:37,399 DEBUG   SenderThread:2977975 [sender.py:send_request():407] send_request: poll_exit
+2023-11-16 23:26:38,360 WARNING StreamThr :2977975 [internal.py:is_dead():414] Internal process exiting, parent pid 2977450 disappeared
+2023-11-16 23:26:38,360 ERROR   StreamThr :2977975 [internal.py:wandb_internal():152] Internal process shutdown.
+2023-11-16 23:26:38,399 INFO    HandlerThread:2977975 [handler.py:finish():866] shutting down handler
+2023-11-16 23:26:38,399 INFO    WriterThread:2977975 [datastore.py:close():294] close: /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/run-puwzfd4v.wandb
+2023-11-16 23:26:38,400 INFO    SenderThread:2977975 [sender.py:finish():1534] shutting down sender
+2023-11-16 23:26:38,400 INFO    SenderThread:2977975 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-16 23:26:38,400 INFO    SenderThread:2977975 [file_pusher.py:join():181] waiting for file pusher
+2023-11-16 23:26:41,331 INFO    wandb-upload_1:2977975 [upload_job.py:push():131] Uploaded file /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/wandb-summary.json
+2023-11-16 23:26:46,195 INFO    wandb-upload_0:2977975 [upload_job.py:push():131] Uploaded file /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/config.yaml
+2023-11-16 23:26:46,200 INFO    wandb-upload_2:2977975 [upload_job.py:push():131] Uploaded file /home/vivek.trivedi/yolov7/wandb/run-20231116_232517-puwzfd4v/files/output.log
+2023-11-16 23:26:46,400 INFO    Thread-11 :2977975 [sender.py:transition_state():613] send defer: 11
+2023-11-16 23:26:46,409 INFO    SenderThread:2977975 [file_stream.py:finish():595] file stream finish called
+2023-11-16 23:26:47,626 INFO    SenderThread:2977975 [file_stream.py:finish():599] file stream finish is done

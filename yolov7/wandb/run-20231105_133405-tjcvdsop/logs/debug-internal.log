@@ -1,0 +1,541 @@
+2023-11-05 13:34:05,387 INFO    StreamThr :2609102 [internal.py:wandb_internal():86] W&B internal server running at pid: 2609102, started at: 2023-11-05 13:34:05.386304
+2023-11-05 13:34:05,388 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status
+2023-11-05 13:34:05,393 INFO    WriterThread:2609102 [datastore.py:open_for_write():85] open: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/run-tjcvdsop.wandb
+2023-11-05 13:34:05,394 DEBUG   SenderThread:2609102 [sender.py:send():380] send: header
+2023-11-05 13:34:05,467 DEBUG   SenderThread:2609102 [sender.py:send():380] send: run
+2023-11-05 13:34:05,518 INFO    SenderThread:2609102 [sender.py:_maybe_setup_resume():759] checking resume status for None/YOLOR/tjcvdsop
+2023-11-05 13:34:06,570 INFO    SenderThread:2609102 [dir_watcher.py:__init__():211] watching files in: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files
+2023-11-05 13:34:06,570 INFO    SenderThread:2609102 [sender.py:_start_run_threads():1122] run started: tjcvdsop with start time 1699171445.390121
+2023-11-05 13:34:06,580 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: check_version
+2023-11-05 13:34:06,581 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: check_version
+2023-11-05 13:34:06,876 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: run_start
+2023-11-05 13:34:06,879 DEBUG   HandlerThread:2609102 [system_info.py:__init__():32] System info init
+2023-11-05 13:34:06,880 DEBUG   HandlerThread:2609102 [system_info.py:__init__():47] System info init done
+2023-11-05 13:34:06,880 INFO    HandlerThread:2609102 [system_monitor.py:start():181] Starting system monitor
+2023-11-05 13:34:06,880 INFO    SystemMonitor:2609102 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-11-05 13:34:06,880 INFO    HandlerThread:2609102 [system_monitor.py:probe():201] Collecting system info
+2023-11-05 13:34:06,881 INFO    SystemMonitor:2609102 [interfaces.py:start():190] Started cpu monitoring
+2023-11-05 13:34:06,881 INFO    SystemMonitor:2609102 [interfaces.py:start():190] Started disk monitoring
+2023-11-05 13:34:06,882 INFO    SystemMonitor:2609102 [interfaces.py:start():190] Started gpu monitoring
+2023-11-05 13:34:06,882 INFO    SystemMonitor:2609102 [interfaces.py:start():190] Started memory monitoring
+2023-11-05 13:34:06,883 INFO    SystemMonitor:2609102 [interfaces.py:start():190] Started network monitoring
+2023-11-05 13:34:06,898 DEBUG   HandlerThread:2609102 [system_info.py:probe():196] Probing system
+2023-11-05 13:34:06,899 DEBUG   HandlerThread:2609102 [system_info.py:_probe_git():181] Probing git
+2023-11-05 13:34:06,925 DEBUG   HandlerThread:2609102 [system_info.py:_probe_git():189] Probing git done
+2023-11-05 13:34:06,926 DEBUG   HandlerThread:2609102 [system_info.py:probe():244] Probing system done
+2023-11-05 13:34:06,926 DEBUG   HandlerThread:2609102 [system_monitor.py:probe():210] {'os': 'Linux-6.1.0-12-amd64-x86_64-with-glibc2.36', 'python': '3.9.18', 'heartbeatAt': '2023-11-05T08:04:06.898433', 'startedAt': '2023-11-05T08:04:05.374743', 'docker': None, 'cuda': None, 'args': ('--weights', 'yolov7-e6e.pt', '--data', 'data/data.yaml', '--workers', '4', '--batch-size', '4', '--img', '640', '640', '--cfg', 'cfg/training/yolov7-e6e.yaml', '--name', 'yolov7-e6e', '--epochs', '10', '--hyp', 'data/hyp.scratch.p6.yaml'), 'state': 'running', 'program': '/home/vivek.trivedi/yolov7/train_aux.py', 'codePathLocal': 'train_aux.py', 'codePath': 'train_aux.py', 'git': {'remote': 'https://github.com/WongKinYiu/yolov7.git', 'commit': 'a207844b1ce82d204ab36d87d496728d3d2348e7'}, 'email': None, 'root': '/home/vivek.trivedi/yolov7', 'host': 'passpoli', 'username': 'vivek.trivedi', 'executable': '/home/vivek.trivedi/anaconda3/envs/vivek/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 3381.8739687499997, 'min': 1800.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 3433.556, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.544, 'min': 1800.0, 'max': 3600.0}, {'current': 3802.112, 'min': 1800.0, 'max': 3600.0}, {'current': 4228.661, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.543, 'min': 1800.0, 'max': 3600.0}, {'current': 4194.437, 'min': 1800.0, 'max': 3600.0}, {'current': 4199.593, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.552, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.555, 'min': 1800.0, 'max': 3600.0}, {'current': 3429.694, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.551, 'min': 1800.0, 'max': 3600.0}, {'current': 4290.25, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.537, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.548, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.554, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3422.97, 'min': 1800.0, 'max': 3600.0}, {'current': 3423.06, 'min': 1800.0, 'max': 3600.0}, {'current': 3421.236, 'min': 1800.0, 'max': 3600.0}, {'current': 3419.302, 'min': 1800.0, 'max': 3600.0}, {'current': 4290.26, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.547, 'min': 1800.0, 'max': 3600.0}, {'current': 4291.093, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3428.694, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3424.989, 'min': 1800.0, 'max': 3600.0}, {'current': 4288.265, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.554, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.554, 'min': 1800.0, 'max': 3600.0}, {'current': 4291.099, 'min': 1800.0, 'max': 3600.0}, {'current': 3431.679, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.547, 'min': 1800.0, 'max': 3600.0}, {'current': 4153.352, 'min': 1800.0, 'max': 3600.0}, {'current': 4229.328, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.559, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.55, 'min': 1800.0, 'max': 3600.0}, {'current': 3420.374, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 4291.101, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.557, 'min': 1800.0, 'max': 3600.0}, {'current': 2700.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.547, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3422.925, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.545, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3424.243, 'min': 1800.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1800.0, 'max': 3600.0}, {'current': 4291.94, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 4291.089, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.549, 'min': 1800.0, 'max': 3600.0}, {'current': 3429.466, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.555, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.554, 'min': 1800.0, 'max': 3600.0}, {'current': 3923.827, 'min': 1800.0, 'max': 3600.0}, {'current': 3423.568, 'min': 1800.0, 'max': 3600.0}, {'current': 3434.063, 'min': 1800.0, 'max': 3600.0}], 'disk': {'/': {'total': 38.50860595703125, 'used': 17.887451171875}}, 'gpu': 'NVIDIA RTX A5000', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}], 'memory': {'total': 125.62868118286133}}
+2023-11-05 13:34:06,926 INFO    HandlerThread:2609102 [system_monitor.py:probe():211] Finished collecting system info
+2023-11-05 13:34:06,926 INFO    HandlerThread:2609102 [system_monitor.py:probe():214] Publishing system info
+2023-11-05 13:34:06,926 DEBUG   HandlerThread:2609102 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-05 13:34:06,927 DEBUG   HandlerThread:2609102 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-05 13:34:06,928 DEBUG   HandlerThread:2609102 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-11-05 13:34:07,572 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_created():271] file/dir created: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/requirements.txt
+2023-11-05 13:34:07,573 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_created():271] file/dir created: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/conda-environment.yaml
+2023-11-05 13:34:12,900 DEBUG   HandlerThread:2609102 [system_info.py:_save_conda():87] Saving conda packages done
+2023-11-05 13:34:12,903 INFO    HandlerThread:2609102 [system_monitor.py:probe():216] Finished publishing system info
+2023-11-05 13:34:12,916 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:34:12,916 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: keepalive
+2023-11-05 13:34:12,916 DEBUG   SenderThread:2609102 [sender.py:send():380] send: files
+2023-11-05 13:34:12,917 INFO    SenderThread:2609102 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-11-05 13:34:12,928 DEBUG   SenderThread:2609102 [sender.py:send():380] send: telemetry
+2023-11-05 13:34:12,928 DEBUG   SenderThread:2609102 [sender.py:send():380] send: telemetry
+2023-11-05 13:34:12,929 DEBUG   SenderThread:2609102 [sender.py:send():380] send: config
+2023-11-05 13:34:12,929 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:34:12,929 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:34:12,930 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:34:13,329 DEBUG   SenderThread:2609102 [sender.py:send():380] send: config
+2023-11-05 13:34:13,577 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/conda-environment.yaml
+2023-11-05 13:34:13,577 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_created():271] file/dir created: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:34:13,577 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_created():271] file/dir created: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/wandb-metadata.json
+2023-11-05 13:34:15,580 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:34:15,881 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:34:17,582 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:34:18,583 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:34:21,281 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:34:24,016 INFO    wandb-upload_0:2609102 [upload_job.py:push():131] Uploaded file /tmp/tmp_xjexcjdwandb/ikajcom2-wandb-metadata.json
+2023-11-05 13:34:26,282 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:34:27,947 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:34:27,948 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:34:27,948 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:34:31,328 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:34:35,652 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:34:36,391 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:34:36,654 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:34:37,655 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/config.yaml
+2023-11-05 13:34:37,655 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:34:39,750 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:34:40,838 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:34:42,172 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:34:47,165 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:34:47,166 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:34:47,166 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:34:47,568 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:34:49,998 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:34:52,569 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:34:57,569 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:35:00,007 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:02,011 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:02,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:35:02,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:35:02,160 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:35:02,680 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:35:04,013 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:06,014 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:06,883 DEBUG   SystemMonitor:2609102 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-11-05 13:35:06,885 DEBUG   SenderThread:2609102 [sender.py:send():380] send: stats
+2023-11-05 13:35:07,909 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:35:08,016 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:10,018 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:12,021 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:13,039 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:35:14,023 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:16,025 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:17,158 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:35:17,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:35:17,159 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:35:18,027 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:18,074 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:35:20,029 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:22,031 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:23,231 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:35:24,033 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:26,035 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:28,037 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:28,313 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:35:30,038 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:32,040 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:32,158 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:35:32,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:35:32,159 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:35:33,589 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:35:34,042 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:36,045 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:36,885 DEBUG   SenderThread:2609102 [sender.py:send():380] send: stats
+2023-11-05 13:35:38,047 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:38,837 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:35:40,049 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:42,051 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:44,031 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:35:44,053 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:46,055 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:47,158 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:35:47,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:35:47,159 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:35:48,058 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:49,132 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:35:50,060 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:52,061 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:54,063 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:54,214 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:35:56,065 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:58,066 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:35:59,440 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:36:00,068 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:02,070 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:02,158 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:36:02,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:36:02,159 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:36:04,072 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:04,675 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:36:06,074 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:06,886 DEBUG   SenderThread:2609102 [sender.py:send():380] send: stats
+2023-11-05 13:36:08,076 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:09,959 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:36:10,078 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:12,080 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:14,082 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:15,103 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:36:16,084 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:17,158 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:36:17,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:36:17,159 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:36:18,086 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:20,088 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:20,399 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:36:22,090 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:24,093 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:25,658 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:36:26,095 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:28,096 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:30,098 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:30,674 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:36:32,100 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:32,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:36:32,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:36:32,159 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:36:34,102 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:35,695 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:36:36,104 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:36,887 DEBUG   SenderThread:2609102 [sender.py:send():380] send: stats
+2023-11-05 13:36:38,107 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:40,109 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:40,699 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:36:42,111 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:44,113 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:45,907 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:36:46,115 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:47,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:36:47,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:36:47,159 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:36:48,118 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:50,120 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:51,170 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:36:52,122 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:54,124 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:56,126 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:36:56,225 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:36:58,128 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:00,130 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:01,277 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:37:02,132 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:02,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:37:02,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:37:02,159 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:37:04,134 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:06,136 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:06,279 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:37:06,888 DEBUG   SenderThread:2609102 [sender.py:send():380] send: stats
+2023-11-05 13:37:08,138 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:10,140 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:11,550 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:37:12,142 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:14,143 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:16,145 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:16,718 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:37:17,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:37:17,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:37:17,160 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:37:18,147 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:20,149 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:21,989 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:37:22,151 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:24,153 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:26,155 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:27,043 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:37:28,156 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:30,158 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:32,074 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:37:32,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:37:32,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:37:32,160 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:37:32,161 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:34,163 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:36,166 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:36,889 DEBUG   SenderThread:2609102 [sender.py:send():380] send: stats
+2023-11-05 13:37:37,092 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:37:38,168 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:40,170 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:42,172 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:42,341 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:37:44,174 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:46,176 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:47,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:37:47,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:37:47,160 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:37:47,463 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:37:48,178 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:50,180 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:52,182 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:52,480 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:37:54,184 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:56,186 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:37:57,671 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:37:58,187 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:00,188 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:02,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:38:02,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:38:02,160 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:38:02,190 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:02,877 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:38:04,192 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:06,194 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:06,890 DEBUG   SenderThread:2609102 [sender.py:send():380] send: stats
+2023-11-05 13:38:08,196 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:08,286 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:38:10,197 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:12,199 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:13,453 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:38:14,201 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:16,203 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:17,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:38:17,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:38:17,160 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:38:18,204 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:18,583 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:38:20,206 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:22,208 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:23,696 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:38:24,210 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:26,212 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:28,214 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:28,747 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:38:30,215 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:32,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:38:32,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:38:32,160 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:38:32,217 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:34,020 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:38:34,222 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:36,224 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:36,891 DEBUG   SenderThread:2609102 [sender.py:send():380] send: stats
+2023-11-05 13:38:38,226 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:39,126 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:38:40,227 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:42,229 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:44,231 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:44,347 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:38:46,233 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:47,159 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:38:47,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:38:47,160 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:38:48,234 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:49,427 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:38:50,236 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:52,239 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:54,241 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:54,730 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:38:56,243 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:58,286 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:38:59,835 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:39:00,287 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:02,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:39:02,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:39:02,160 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:39:02,358 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:04,360 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:05,031 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:39:06,362 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:06,892 DEBUG   SenderThread:2609102 [sender.py:send():380] send: stats
+2023-11-05 13:39:08,364 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:10,194 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:39:10,366 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:12,368 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:14,370 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:15,366 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:39:16,372 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:17,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:39:17,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:39:17,160 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:39:18,374 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:20,376 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:20,435 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:39:22,416 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:24,470 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:25,456 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:39:26,472 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:28,519 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:30,521 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:30,697 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:39:32,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:39:32,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:39:32,160 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:39:32,522 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:34,524 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:36,020 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:39:36,526 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:36,893 DEBUG   SenderThread:2609102 [sender.py:send():380] send: stats
+2023-11-05 13:39:38,529 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:40,531 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:41,043 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:39:42,533 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:44,535 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:46,182 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:39:46,538 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:47,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:39:47,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:39:47,160 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:39:48,633 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:50,636 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:51,236 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:39:52,739 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:54,745 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:56,434 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:39:56,747 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:39:58,749 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:00,751 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:01,699 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:40:02,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:40:02,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:40:02,161 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:40:02,752 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:04,754 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:06,755 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:40:06,806 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:06,894 DEBUG   SenderThread:2609102 [sender.py:send():380] send: stats
+2023-11-05 13:40:07,807 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:09,809 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:11,811 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:11,986 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:40:13,910 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:15,912 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:17,093 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:40:17,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:40:17,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:40:17,161 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:40:17,914 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:19,916 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:21,918 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:22,442 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:40:23,919 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:25,921 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:27,496 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:40:27,924 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:29,926 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:31,927 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:32,160 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:40:32,161 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-05 13:40:32,161 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: stop_status
+2023-11-05 13:40:32,564 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:40:34,034 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:36,088 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:36,895 DEBUG   SenderThread:2609102 [sender.py:send():380] send: stats
+2023-11-05 13:40:37,676 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:40:38,091 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:40,218 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:42,801 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:40:44,221 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:45,182 DEBUG   SenderThread:2609102 [sender.py:send():380] send: exit
+2023-11-05 13:40:45,182 INFO    SenderThread:2609102 [sender.py:send_exit():585] handling exit code: 1
+2023-11-05 13:40:45,182 INFO    SenderThread:2609102 [sender.py:send_exit():587] handling runtime: 398
+2023-11-05 13:40:45,223 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_created():271] file/dir created: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/wandb-summary.json
+2023-11-05 13:40:45,232 INFO    SenderThread:2609102 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-05 13:40:45,232 INFO    SenderThread:2609102 [sender.py:send_exit():593] send defer
+2023-11-05 13:40:45,232 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: defer
+2023-11-05 13:40:45,233 INFO    HandlerThread:2609102 [handler.py:handle_request_defer():170] handle defer: 0
+2023-11-05 13:40:45,233 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: defer
+2023-11-05 13:40:45,233 INFO    SenderThread:2609102 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-11-05 13:40:45,233 INFO    SenderThread:2609102 [sender.py:transition_state():613] send defer: 1
+2023-11-05 13:40:45,233 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: defer
+2023-11-05 13:40:45,233 INFO    HandlerThread:2609102 [handler.py:handle_request_defer():170] handle defer: 1
+2023-11-05 13:40:45,233 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: defer
+2023-11-05 13:40:45,233 INFO    SenderThread:2609102 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-11-05 13:40:45,233 INFO    SenderThread:2609102 [sender.py:transition_state():613] send defer: 2
+2023-11-05 13:40:45,233 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: defer
+2023-11-05 13:40:45,233 INFO    HandlerThread:2609102 [handler.py:handle_request_defer():170] handle defer: 2
+2023-11-05 13:40:45,233 INFO    HandlerThread:2609102 [system_monitor.py:finish():190] Stopping system monitor
+2023-11-05 13:40:45,234 INFO    HandlerThread:2609102 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-05 13:40:45,234 INFO    HandlerThread:2609102 [interfaces.py:finish():202] Joined disk monitor
+2023-11-05 13:40:45,234 DEBUG   SystemMonitor:2609102 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-11-05 13:40:45,234 DEBUG   SystemMonitor:2609102 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-11-05 13:40:45,599 INFO    HandlerThread:2609102 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-05 13:40:45,599 INFO    HandlerThread:2609102 [interfaces.py:finish():202] Joined memory monitor
+2023-11-05 13:40:45,599 INFO    HandlerThread:2609102 [interfaces.py:finish():202] Joined network monitor
+2023-11-05 13:40:45,599 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: defer
+2023-11-05 13:40:45,599 INFO    SenderThread:2609102 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-11-05 13:40:45,600 INFO    SenderThread:2609102 [sender.py:transition_state():613] send defer: 3
+2023-11-05 13:40:45,600 DEBUG   SenderThread:2609102 [sender.py:send():380] send: stats
+2023-11-05 13:40:45,600 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: defer
+2023-11-05 13:40:45,600 INFO    HandlerThread:2609102 [handler.py:handle_request_defer():170] handle defer: 3
+2023-11-05 13:40:45,600 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: defer
+2023-11-05 13:40:45,600 INFO    SenderThread:2609102 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-11-05 13:40:45,600 INFO    SenderThread:2609102 [sender.py:transition_state():613] send defer: 4
+2023-11-05 13:40:45,600 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: defer
+2023-11-05 13:40:45,600 INFO    HandlerThread:2609102 [handler.py:handle_request_defer():170] handle defer: 4
+2023-11-05 13:40:45,601 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: defer
+2023-11-05 13:40:45,601 INFO    SenderThread:2609102 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-11-05 13:40:45,601 INFO    SenderThread:2609102 [sender.py:transition_state():613] send defer: 5
+2023-11-05 13:40:45,601 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: defer
+2023-11-05 13:40:45,601 INFO    HandlerThread:2609102 [handler.py:handle_request_defer():170] handle defer: 5
+2023-11-05 13:40:45,601 DEBUG   SenderThread:2609102 [sender.py:send():380] send: summary
+2023-11-05 13:40:45,603 INFO    SenderThread:2609102 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-05 13:40:45,603 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: defer
+2023-11-05 13:40:45,603 INFO    SenderThread:2609102 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-11-05 13:40:45,603 INFO    SenderThread:2609102 [sender.py:transition_state():613] send defer: 6
+2023-11-05 13:40:45,603 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: defer
+2023-11-05 13:40:45,603 INFO    HandlerThread:2609102 [handler.py:handle_request_defer():170] handle defer: 6
+2023-11-05 13:40:45,603 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: defer
+2023-11-05 13:40:45,603 INFO    SenderThread:2609102 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-11-05 13:40:45,603 INFO    SenderThread:2609102 [sender.py:transition_state():613] send defer: 7
+2023-11-05 13:40:45,603 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:40:45,603 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: defer
+2023-11-05 13:40:45,603 INFO    HandlerThread:2609102 [handler.py:handle_request_defer():170] handle defer: 7
+2023-11-05 13:40:45,604 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: defer
+2023-11-05 13:40:45,604 INFO    SenderThread:2609102 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-11-05 13:40:46,182 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: poll_exit
+2023-11-05 13:40:46,225 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/wandb-summary.json
+2023-11-05 13:40:46,225 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:46,372 INFO    SenderThread:2609102 [sender.py:transition_state():613] send defer: 8
+2023-11-05 13:40:46,373 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: poll_exit
+2023-11-05 13:40:46,373 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: defer
+2023-11-05 13:40:46,373 INFO    HandlerThread:2609102 [handler.py:handle_request_defer():170] handle defer: 8
+2023-11-05 13:40:46,373 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: defer
+2023-11-05 13:40:46,373 INFO    SenderThread:2609102 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-11-05 13:40:46,373 INFO    SenderThread:2609102 [job_builder.py:build():281] Attempting to build job artifact
+2023-11-05 13:40:46,375 INFO    SenderThread:2609102 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-11-05 13:40:46,377 INFO    SenderThread:2609102 [job_builder.py:build():369] adding wandb-job metadata file
+2023-11-05 13:40:46,391 INFO    SenderThread:2609102 [sender.py:transition_state():613] send defer: 9
+2023-11-05 13:40:46,392 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: defer
+2023-11-05 13:40:46,392 DEBUG   SenderThread:2609102 [sender.py:send():380] send: artifact
+2023-11-05 13:40:46,392 INFO    HandlerThread:2609102 [handler.py:handle_request_defer():170] handle defer: 9
+2023-11-05 13:40:47,183 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: poll_exit
+2023-11-05 13:40:47,225 INFO    Thread-12 :2609102 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:47,897 INFO    SenderThread:2609102 [sender.py:send_artifact():1456] sent artifact job-https___github.com_WongKinYiu_yolov7.git_train_aux.py - {'id': 'QXJ0aWZhY3Q6NjI4Njk1ODIx', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExMjgwMzY1Mg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjI4Njk1ODIx', 'versionIndex': 0}}}
+2023-11-05 13:40:47,897 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: defer
+2023-11-05 13:40:47,897 INFO    SenderThread:2609102 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-11-05 13:40:47,897 INFO    SenderThread:2609102 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-11-05 13:40:48,226 INFO    SenderThread:2609102 [dir_watcher.py:finish():388] scan: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files
+2023-11-05 13:40:48,227 INFO    SenderThread:2609102 [dir_watcher.py:finish():402] scan save: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/conda-environment.yaml conda-environment.yaml
+2023-11-05 13:40:48,227 INFO    SenderThread:2609102 [dir_watcher.py:finish():402] scan save: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/config.yaml config.yaml
+2023-11-05 13:40:48,227 INFO    SenderThread:2609102 [dir_watcher.py:finish():402] scan save: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/wandb-summary.json wandb-summary.json
+2023-11-05 13:40:48,229 INFO    SenderThread:2609102 [dir_watcher.py:finish():402] scan save: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log output.log
+2023-11-05 13:40:48,231 INFO    SenderThread:2609102 [dir_watcher.py:finish():402] scan save: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/requirements.txt requirements.txt
+2023-11-05 13:40:48,231 INFO    SenderThread:2609102 [dir_watcher.py:finish():402] scan save: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/wandb-metadata.json wandb-metadata.json
+2023-11-05 13:40:48,231 INFO    SenderThread:2609102 [sender.py:transition_state():613] send defer: 10
+2023-11-05 13:40:48,231 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: poll_exit
+2023-11-05 13:40:48,232 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: defer
+2023-11-05 13:40:48,232 INFO    HandlerThread:2609102 [handler.py:handle_request_defer():170] handle defer: 10
+2023-11-05 13:40:48,234 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: defer
+2023-11-05 13:40:48,234 INFO    SenderThread:2609102 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-11-05 13:40:48,234 INFO    SenderThread:2609102 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-05 13:40:52,184 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: keepalive
+2023-11-05 13:40:53,235 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:40:54,077 INFO    wandb-upload_0:2609102 [upload_job.py:push():131] Uploaded file /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/conda-environment.yaml
+2023-11-05 13:40:54,252 INFO    wandb-upload_1:2609102 [upload_job.py:push():131] Uploaded file /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/config.yaml
+2023-11-05 13:40:57,186 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: keepalive
+2023-11-05 13:40:58,236 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: status_report
+2023-11-05 13:40:58,985 INFO    wandb-upload_2:2609102 [upload_job.py:push():131] Uploaded file /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/wandb-summary.json
+2023-11-05 13:40:59,017 INFO    wandb-upload_4:2609102 [upload_job.py:push():131] Uploaded file /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/requirements.txt
+2023-11-05 13:40:59,026 INFO    wandb-upload_3:2609102 [upload_job.py:push():131] Uploaded file /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/files/output.log
+2023-11-05 13:40:59,227 INFO    Thread-11 :2609102 [sender.py:transition_state():613] send defer: 11
+2023-11-05 13:40:59,227 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: defer
+2023-11-05 13:40:59,227 INFO    HandlerThread:2609102 [handler.py:handle_request_defer():170] handle defer: 11
+2023-11-05 13:40:59,227 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: defer
+2023-11-05 13:40:59,227 INFO    SenderThread:2609102 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-11-05 13:40:59,228 INFO    SenderThread:2609102 [file_pusher.py:join():181] waiting for file pusher
+2023-11-05 13:40:59,228 INFO    SenderThread:2609102 [sender.py:transition_state():613] send defer: 12
+2023-11-05 13:40:59,228 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: defer
+2023-11-05 13:40:59,228 INFO    HandlerThread:2609102 [handler.py:handle_request_defer():170] handle defer: 12
+2023-11-05 13:40:59,228 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: defer
+2023-11-05 13:40:59,228 INFO    SenderThread:2609102 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-11-05 13:40:59,228 INFO    SenderThread:2609102 [file_stream.py:finish():595] file stream finish called
+2023-11-05 13:41:00,185 INFO    SenderThread:2609102 [file_stream.py:finish():599] file stream finish is done
+2023-11-05 13:41:00,185 INFO    SenderThread:2609102 [sender.py:transition_state():613] send defer: 13
+2023-11-05 13:41:00,185 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: defer
+2023-11-05 13:41:00,185 INFO    HandlerThread:2609102 [handler.py:handle_request_defer():170] handle defer: 13
+2023-11-05 13:41:00,185 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: defer
+2023-11-05 13:41:00,185 INFO    SenderThread:2609102 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-11-05 13:41:00,186 INFO    SenderThread:2609102 [sender.py:transition_state():613] send defer: 14
+2023-11-05 13:41:00,186 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: defer
+2023-11-05 13:41:00,186 INFO    HandlerThread:2609102 [handler.py:handle_request_defer():170] handle defer: 14
+2023-11-05 13:41:00,186 DEBUG   SenderThread:2609102 [sender.py:send():380] send: final
+2023-11-05 13:41:00,186 DEBUG   SenderThread:2609102 [sender.py:send():380] send: footer
+2023-11-05 13:41:00,186 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: defer
+2023-11-05 13:41:00,186 INFO    SenderThread:2609102 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-11-05 13:41:00,187 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: poll_exit
+2023-11-05 13:41:00,187 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: poll_exit
+2023-11-05 13:41:00,187 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: server_info
+2023-11-05 13:41:00,187 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: server_info
+2023-11-05 13:41:00,189 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: get_summary
+2023-11-05 13:41:00,189 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: sampled_history
+2023-11-05 13:41:00,190 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-05 13:41:00,190 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: job_info
+2023-11-05 13:41:00,474 DEBUG   SenderThread:2609102 [sender.py:send_request():407] send_request: job_info
+2023-11-05 13:41:00,474 INFO    MainThread:2609102 [wandb_run.py:_footer_history_summary_info():3554] rendering history
+2023-11-05 13:41:00,474 INFO    MainThread:2609102 [wandb_run.py:_footer_history_summary_info():3586] rendering summary
+2023-11-05 13:41:00,474 INFO    MainThread:2609102 [wandb_run.py:_footer_sync_info():3513] logging synced files
+2023-11-05 13:41:00,474 DEBUG   HandlerThread:2609102 [handler.py:handle_request():144] handle_request: shutdown
+2023-11-05 13:41:00,474 INFO    HandlerThread:2609102 [handler.py:finish():844] shutting down handler
+2023-11-05 13:41:01,190 INFO    WriterThread:2609102 [datastore.py:close():294] close: /home/vivek.trivedi/yolov7/wandb/run-20231105_133405-tjcvdsop/run-tjcvdsop.wandb
+2023-11-05 13:41:01,474 INFO    SenderThread:2609102 [sender.py:finish():1534] shutting down sender
+2023-11-05 13:41:01,474 INFO    SenderThread:2609102 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-05 13:41:01,474 INFO    SenderThread:2609102 [file_pusher.py:join():181] waiting for file pusher

@@ -1,0 +1,392 @@
+{
+    "os": "Linux-6.1.0-12-amd64-x86_64-with-glibc2.36",
+    "python": "3.9.18",
+    "heartbeatAt": "2023-11-05T06:20:33.775622",
+    "startedAt": "2023-11-05T06:20:31.991728",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--weights",
+        "yolov7-e6e.pt",
+        "--data",
+        "data/data.yaml",
+        "--workers",
+        "4",
+        "--batch-size",
+        "8",
+        "--img",
+        "640",
+        "640",
+        "--cfg",
+        "cfg/training/yolov7-e6e.yaml",
+        "--name",
+        "yolov7-e6e",
+        "--epochs",
+        "20",
+        "--hyp",
+        "data/hyp.scratch.p6.yaml"
+    ],
+    "state": "running",
+    "program": "/home/vivek.trivedi/yolov7/train_aux.py",
+    "codePathLocal": "train_aux.py",
+    "codePath": "train_aux.py",
+    "git": {
+        "remote": "https://github.com/WongKinYiu/yolov7.git",
+        "commit": "a207844b1ce82d204ab36d87d496728d3d2348e7"
+    },
+    "email": null,
+    "root": "/home/vivek.trivedi/yolov7",
+    "host": "passpoli",
+    "username": "vivek.trivedi",
+    "executable": "/home/vivek.trivedi/anaconda3/envs/vivek/bin/python",
+    "cpu_count": 32,
+    "cpu_count_logical": 64,
+    "cpu_freq": {
+        "current": 3688.066109374999,
+        "min": 1800.0,
+        "max": 3600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3453.264,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4053.522,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4054.235,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4059.207,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4060.996,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4052.788,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4007.321,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4291.932,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4290.035,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4083.725,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3427.977,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4251.306,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4290.54,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4010.293,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4289.395,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3466.667,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4052.513,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4052.88,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4290.041,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4290.26,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4051.881,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4052.213,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4038.956,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4053.193,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4054.611,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4059.402,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3987.15,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4050.684,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3666.972,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4073.272,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4081.273,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3433.149,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3435.906,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4289.417,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3430.245,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3431.949,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4037.145,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4290.278,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3661.669,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4034.183,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4290.312,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4290.262,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4053.082,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3427.707,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4035.797,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4038.872,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4035.9,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4033.254,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4288.781,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4290.393,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4050.769,
+            "min": 1800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4052.649,
+            "min": 1800.0,
+            "max": 3600.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 38.50860595703125,
+            "used": 17.886783599853516
+        }
+    },
+    "gpu": "NVIDIA RTX A5000",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA RTX A5000",
+            "memory_total": 25757220864
+        },
+        {
+            "name": "NVIDIA RTX A5000",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 125.62868118286133
+    }
+}

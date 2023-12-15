@@ -1,0 +1,902 @@
+2023-11-14 23:02:59,188 INFO    StreamThr :796477 [internal.py:wandb_internal():86] W&B internal server running at pid: 796477, started at: 2023-11-14 23:02:59.187542
+2023-11-14 23:02:59,189 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status
+2023-11-14 23:02:59,193 INFO    WriterThread:796477 [datastore.py:open_for_write():85] open: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/run-hxh1qgrq.wandb
+2023-11-14 23:02:59,194 DEBUG   SenderThread:796477 [sender.py:send():380] send: header
+2023-11-14 23:02:59,218 DEBUG   SenderThread:796477 [sender.py:send():380] send: run
+2023-11-14 23:02:59,285 INFO    SenderThread:796477 [sender.py:_maybe_setup_resume():759] checking resume status for None/YOLOR/hxh1qgrq
+2023-11-14 23:03:03,453 INFO    SenderThread:796477 [dir_watcher.py:__init__():211] watching files in: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files
+2023-11-14 23:03:03,453 INFO    SenderThread:796477 [sender.py:_start_run_threads():1122] run started: hxh1qgrq with start time 1699983179.189266
+2023-11-14 23:03:03,467 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: check_version
+2023-11-14 23:03:03,468 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: check_version
+2023-11-14 23:03:03,736 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: run_start
+2023-11-14 23:03:03,741 DEBUG   HandlerThread:796477 [system_info.py:__init__():32] System info init
+2023-11-14 23:03:03,741 DEBUG   HandlerThread:796477 [system_info.py:__init__():47] System info init done
+2023-11-14 23:03:03,741 INFO    HandlerThread:796477 [system_monitor.py:start():194] Starting system monitor
+2023-11-14 23:03:03,741 INFO    SystemMonitor:796477 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-14 23:03:03,741 INFO    HandlerThread:796477 [system_monitor.py:probe():214] Collecting system info
+2023-11-14 23:03:03,742 INFO    SystemMonitor:796477 [interfaces.py:start():190] Started cpu monitoring
+2023-11-14 23:03:03,742 INFO    SystemMonitor:796477 [interfaces.py:start():190] Started disk monitoring
+2023-11-14 23:03:03,742 INFO    SystemMonitor:796477 [interfaces.py:start():190] Started gpu monitoring
+2023-11-14 23:03:03,744 INFO    SystemMonitor:796477 [interfaces.py:start():190] Started memory monitoring
+2023-11-14 23:03:03,745 INFO    SystemMonitor:796477 [interfaces.py:start():190] Started network monitoring
+2023-11-14 23:03:03,768 DEBUG   HandlerThread:796477 [system_info.py:probe():196] Probing system
+2023-11-14 23:03:03,775 DEBUG   HandlerThread:796477 [system_info.py:_probe_git():181] Probing git
+2023-11-14 23:03:03,790 DEBUG   HandlerThread:796477 [system_info.py:_probe_git():189] Probing git done
+2023-11-14 23:03:03,790 DEBUG   HandlerThread:796477 [system_info.py:probe():244] Probing system done
+2023-11-14 23:03:03,790 DEBUG   HandlerThread:796477 [system_monitor.py:probe():223] {'os': 'Linux-6.1.0-12-amd64-x86_64-with-glibc2.10', 'python': '3.8.18', 'heartbeatAt': '2023-11-14T17:33:03.768329', 'startedAt': '2023-11-14T17:32:59.175793', 'docker': None, 'cuda': None, 'args': ('--weights', 'runs/train/yolov7-e6e48/weights/best.pt', '--data', 'data/data.yaml', '--workers', '4', '--batch-size', '4', '--img', '640', '640', '--cfg', 'cfg/training/yolov7-e6e.yaml', '--name', 'yolov7-e6e', '--epochs', '10', '--hyp', 'data/hyp.scratch.p6.yaml'), 'state': 'running', 'program': 'train_aux.py', 'codePathLocal': 'train_aux.py', 'codePath': 'train_aux.py', 'git': {'remote': 'https://github.com/WongKinYiu/yolov7.git', 'commit': 'a207844b1ce82d204ab36d87d496728d3d2348e7'}, 'email': None, 'root': '/home/vivek.trivedi/yolov7', 'host': 'passpoli', 'username': 'vivek.trivedi', 'executable': '/home/vivek.trivedi/anaconda3/envs/mmyolo/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 2850.880734375, 'min': 1800.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3421.348, 'min': 1800.0, 'max': 3600.0}, {'current': 4290.45, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.749, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3423.303, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.747, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.76, 'min': 1800.0, 'max': 3600.0}, {'current': 3431.729, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.077, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.075, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.743, 'min': 1800.0, 'max': 3600.0}, {'current': 1794.485, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 2209.979, 'min': 1800.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1796.719, 'min': 1800.0, 'max': 3600.0}, {'current': 3589.094, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.741, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.735, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3228.117, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.748, 'min': 1800.0, 'max': 3600.0}, {'current': 2526.916, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.079, 'min': 1800.0, 'max': 3600.0}, {'current': 4282.67, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.743, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.752, 'min': 1800.0, 'max': 3600.0}, {'current': 3431.726, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.747, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.07, 'min': 1800.0, 'max': 3600.0}, {'current': 2807.333, 'min': 1800.0, 'max': 3600.0}, {'current': 1793.457, 'min': 1800.0, 'max': 3600.0}, {'current': 3432.404, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.082, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.081, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.737, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.748, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.743, 'min': 1800.0, 'max': 3600.0}, {'current': 2694.561, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.081, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1792.031, 'min': 1800.0, 'max': 3600.0}, {'current': 1791.564, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.745, 'min': 1800.0, 'max': 3600.0}, {'current': 3433.744, 'min': 1800.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}], 'disk': {'/': {'total': 38.50860595703125, 'used': 17.08010482788086}}, 'gpu': 'NVIDIA RTX A5000', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}], 'memory': {'total': 125.62868118286133}}
+2023-11-14 23:03:03,791 INFO    HandlerThread:796477 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-14 23:03:03,791 INFO    HandlerThread:796477 [system_monitor.py:probe():227] Publishing system info
+2023-11-14 23:03:03,791 DEBUG   HandlerThread:796477 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-14 23:03:03,793 DEBUG   HandlerThread:796477 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-14 23:03:03,793 DEBUG   HandlerThread:796477 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-11-14 23:03:04,455 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_created():271] file/dir created: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/requirements.txt
+2023-11-14 23:03:04,455 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_created():271] file/dir created: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/conda-environment.yaml
+2023-11-14 23:03:07,456 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/conda-environment.yaml
+2023-11-14 23:03:07,505 DEBUG   HandlerThread:796477 [system_info.py:_save_conda():87] Saving conda packages done
+2023-11-14 23:03:07,508 INFO    HandlerThread:796477 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-14 23:03:07,519 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:03:07,520 DEBUG   SenderThread:796477 [sender.py:send():380] send: files
+2023-11-14 23:03:07,520 INFO    SenderThread:796477 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-11-14 23:03:07,529 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:03:07,529 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:03:07,531 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:03:08,458 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_created():271] file/dir created: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/wandb-metadata.json
+2023-11-14 23:03:08,847 DEBUG   SenderThread:796477 [sender.py:send():380] send: telemetry
+2023-11-14 23:03:08,847 DEBUG   SenderThread:796477 [sender.py:send():380] send: telemetry
+2023-11-14 23:03:08,847 DEBUG   SenderThread:796477 [sender.py:send():380] send: config
+2023-11-14 23:03:08,847 DEBUG   SenderThread:796477 [sender.py:send():380] send: config
+2023-11-14 23:03:09,482 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_created():271] file/dir created: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:03:09,879 INFO    wandb-upload_0:796477 [upload_job.py:push():131] Uploaded file /tmp/tmpj90jiwnjwandb/ho7xfkko-wandb-metadata.json
+2023-11-14 23:03:10,079 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:03:11,484 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:03:15,407 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:03:20,408 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:03:23,902 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:03:23,903 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:03:23,903 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:03:25,957 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:03:30,962 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:03:33,505 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/config.yaml
+2023-11-14 23:03:35,507 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:03:37,510 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:03:37,737 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:03:38,902 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:03:38,903 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:03:38,903 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:03:39,513 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:03:40,515 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:03:41,515 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:03:42,903 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:03:43,521 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:03:45,526 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:03:47,528 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:03:48,018 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:03:49,529 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:03:51,531 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:03:53,069 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:03:53,533 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:03:53,902 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:03:53,902 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:03:53,902 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:03:55,535 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:03:57,541 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:03:58,075 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:03:59,544 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:01,546 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:03,151 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:04:03,547 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:03,745 DEBUG   SystemMonitor:796477 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-14 23:04:03,746 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:04:05,549 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:07,551 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:08,224 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:04:08,902 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:04:08,902 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:04:08,903 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:04:09,552 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:10,554 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:11,554 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:13,224 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:04:13,555 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:15,557 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:17,558 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:18,244 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:04:19,560 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:21,561 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:23,296 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:04:23,563 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:23,902 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:04:23,902 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:04:23,902 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:04:25,565 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:27,568 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:28,356 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:04:29,572 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:31,575 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:33,400 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:04:33,577 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:33,748 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:04:35,579 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:37,580 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:38,457 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:04:38,902 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:04:38,902 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:04:38,902 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:04:39,583 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:41,584 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:43,508 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:04:43,586 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:45,588 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:47,590 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:48,536 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:04:49,593 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:51,596 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:53,586 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:04:53,600 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:53,902 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:04:53,902 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:04:53,903 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:04:55,603 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:56,605 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:57,606 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:04:58,633 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:04:59,607 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:05:01,609 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:05:03,613 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:05:03,716 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:05:03,748 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:05:05,619 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:05:07,621 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:05:08,757 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:05:08,902 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:05:08,903 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:05:08,903 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:05:09,624 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:05:11,626 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:05:13,631 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:05:13,838 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:05:15,632 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:05:17,633 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:05:19,499 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:05:19,634 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:05:20,636 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:05:21,636 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:05:22,637 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:05:23,944 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:05:23,945 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:05:23,946 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:05:24,959 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:05:29,959 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:05:33,749 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:05:35,750 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:05:38,949 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:05:38,949 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:05:38,950 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:05:40,857 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:05:45,857 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:05:50,858 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:05:54,003 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:05:54,004 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:05:54,109 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:05:56,754 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:06:01,755 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:06:03,750 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:06:07,751 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:06:09,012 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:06:09,012 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:06:09,013 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:06:12,963 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:06:17,964 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:06:23,089 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:06:23,683 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:24,015 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:06:24,017 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:06:24,018 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:06:25,689 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:27,689 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:28,194 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:06:29,692 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:31,698 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:33,344 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:06:33,704 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:33,754 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:06:35,709 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:37,715 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:38,344 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:06:39,013 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:06:39,015 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:06:39,017 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:06:39,721 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:41,722 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:43,490 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:06:43,726 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:45,730 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:47,731 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:48,503 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:06:49,735 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:51,739 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:53,513 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:06:53,745 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:54,020 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:06:54,024 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:06:54,025 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:06:55,749 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:57,754 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:06:58,625 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:06:59,756 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:01,760 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:03,637 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:07:03,756 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:07:03,766 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:05,768 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:07,770 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:08,784 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:07:09,019 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:07:09,021 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:07:09,022 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:07:09,772 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:11,773 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:13,776 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:13,876 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:07:15,779 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:17,781 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:19,013 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:07:19,783 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:21,785 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:23,787 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:24,020 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:07:24,022 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:07:24,022 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:07:24,023 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:07:25,790 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:27,792 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:29,060 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:07:29,795 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:31,797 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:33,754 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:07:33,800 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:34,132 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:07:35,803 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:37,806 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:39,023 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:07:39,026 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:07:39,028 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:07:39,809 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:39,908 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:07:41,811 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:43,815 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:44,964 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:07:45,817 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:47,822 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:49,826 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:50,025 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:07:51,831 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:53,834 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:54,020 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:07:54,022 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:07:54,023 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:07:55,050 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:07:55,838 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:57,844 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:07:59,849 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:00,091 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:08:01,856 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:03,763 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:08:03,858 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:05,159 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:08:05,864 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:07,869 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:09,021 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:08:09,023 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:08:09,026 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:08:09,873 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:10,198 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:08:11,877 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:13,886 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:15,285 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:08:15,889 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:17,894 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:19,896 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:20,434 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:08:21,897 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:23,909 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:24,018 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:08:24,018 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:08:24,062 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:08:25,499 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:08:25,915 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:27,916 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:29,920 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:30,645 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:08:31,926 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:33,767 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:08:33,932 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:35,788 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:08:35,935 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:37,938 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:39,018 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:08:39,019 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:08:39,021 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:08:39,940 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:40,803 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:08:41,943 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:43,944 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:45,928 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:08:45,946 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:47,948 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:49,950 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:50,960 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:08:51,967 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:53,976 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:54,024 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:08:54,024 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:08:54,060 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:08:55,978 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:56,093 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:08:57,986 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:08:59,989 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:01,232 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:09:01,996 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:03,769 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:09:04,075 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:05,172 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:06,770 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:09:11,416 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:09:11,416 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:09:11,417 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:09:12,559 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:09:14,330 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:16,332 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:17,804 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:09:18,333 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:20,335 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:22,337 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:22,998 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:09:24,339 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:26,341 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:26,366 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:09:26,367 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:09:26,367 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:09:28,343 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:28,351 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:09:30,345 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:32,347 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:33,714 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:09:33,770 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:09:34,349 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:36,351 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:38,354 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:38,793 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:09:40,355 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:41,366 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:09:41,366 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:09:41,367 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:09:42,356 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:43,881 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:09:44,359 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:46,361 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:48,362 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:49,021 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:09:50,365 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:52,367 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:54,120 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:09:54,368 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:56,366 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:09:56,366 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:09:56,367 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:09:56,370 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:58,371 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:09:59,541 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:10:00,373 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:02,375 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:03,770 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:10:04,377 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:04,888 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:10:06,379 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:08,381 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:10,119 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:10:10,398 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:11,366 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:10:11,367 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:10:11,367 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:10:12,401 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:14,404 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:15,358 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:10:16,405 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:18,407 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:20,410 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:20,753 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:10:22,481 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:24,483 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:25,922 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:10:26,368 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:10:26,368 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:10:26,368 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:10:26,485 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:28,487 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:30,576 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:31,033 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:10:32,638 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:33,771 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:10:34,641 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:36,141 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:10:36,645 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:38,646 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:40,648 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:41,265 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:10:41,367 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:10:41,367 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:10:41,368 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:10:42,650 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:44,653 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:46,512 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:10:46,655 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:48,657 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:50,659 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:51,720 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:10:52,661 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:54,663 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:56,367 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:10:56,367 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:10:56,369 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:10:56,664 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:10:56,726 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:10:58,667 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:00,669 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:01,876 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:11:02,673 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:03,772 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:11:04,675 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:06,677 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:06,958 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:11:08,679 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:10,682 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:11,368 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:11:11,368 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:11:11,369 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:11:12,323 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:11:12,683 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:14,685 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:16,688 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:17,506 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:11:18,689 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:20,691 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:22,567 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:11:22,693 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:24,695 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:26,367 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:11:26,368 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:11:26,369 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:11:26,697 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:27,708 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:11:28,699 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:30,740 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:32,741 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:32,923 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:11:33,773 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:11:34,744 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:36,746 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:38,021 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:11:38,748 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:40,760 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:41,368 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:11:41,368 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:11:41,368 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:11:42,761 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:43,323 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:11:44,764 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:46,767 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:48,400 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:11:48,769 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:50,771 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:52,773 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:53,657 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:11:54,775 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:56,368 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:11:56,369 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:11:56,369 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:11:56,777 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:58,779 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:11:58,887 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:12:00,792 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:02,795 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:03,774 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:12:04,134 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:12:04,797 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:06,799 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:08,801 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:09,244 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:12:10,803 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:11,368 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:12:11,368 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:12:11,368 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:12:12,804 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:14,404 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:12:14,805 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:16,807 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:18,809 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:19,706 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:12:20,811 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:22,812 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:24,815 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:25,065 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:12:26,368 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:12:26,368 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:12:26,369 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:12:26,837 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:28,839 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:30,213 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:12:30,841 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:32,843 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:33,775 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:12:34,846 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:35,301 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:12:36,848 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:38,850 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:40,556 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:12:41,002 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:41,369 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:12:41,369 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:12:41,370 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:12:42,003 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:44,006 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:45,796 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:12:46,008 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:48,010 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:50,012 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:51,050 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:12:52,013 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:54,015 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:56,017 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:12:56,368 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:12:56,370 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:12:56,370 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:12:56,370 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:12:58,018 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:00,020 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:01,527 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:13:02,022 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:03,776 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:13:04,024 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:06,025 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:06,906 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:13:08,028 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:10,030 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:11,369 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:13:11,370 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:13:11,370 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:13:11,938 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:13:12,031 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:14,034 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:16,036 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:17,033 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:13:18,038 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:20,040 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:22,042 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:22,161 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:13:24,044 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:26,046 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:26,369 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:13:26,370 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:13:26,370 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:13:27,637 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:13:28,048 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:30,050 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:32,052 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:32,828 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:13:33,777 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:13:34,054 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:36,056 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:38,100 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:38,181 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:13:40,102 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:41,369 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:13:41,371 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:13:41,371 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:13:42,104 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:43,481 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:13:44,114 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:46,116 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:48,118 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:48,689 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:13:50,122 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:52,145 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:53,803 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:13:54,151 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:56,161 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:56,369 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:13:56,370 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:13:56,370 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:13:58,169 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:13:58,898 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:14:00,170 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:02,172 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:03,777 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:14:04,173 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:04,234 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:14:06,176 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:08,200 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:09,776 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:14:10,202 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:11,369 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:14:11,370 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:14:11,371 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:14:12,224 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:14,232 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:14,808 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:14:16,237 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:18,247 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:20,092 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:14:20,255 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:22,257 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:24,258 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:25,459 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:14:26,317 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:26,369 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:14:26,371 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:14:26,371 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:14:28,323 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:30,325 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:30,596 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:14:32,336 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:33,779 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:14:34,353 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:35,629 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:14:36,359 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:38,361 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:40,366 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:41,080 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:14:41,369 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:14:41,371 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:14:41,371 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:14:42,373 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:44,375 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:46,216 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:14:46,395 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:48,403 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:50,414 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:51,257 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:14:52,421 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:54,434 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:56,275 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:14:56,369 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:14:56,371 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:14:56,371 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:14:56,456 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:14:58,458 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:00,460 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:01,513 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:15:02,470 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:03,779 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:15:04,471 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:06,498 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:06,819 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:15:08,503 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:10,505 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:11,370 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:15:11,372 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:15:11,372 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:15:12,257 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:15:12,508 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:14,518 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:16,524 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:17,382 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:15:18,527 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:20,538 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:22,545 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:22,759 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:15:24,548 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:26,370 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:15:26,372 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:15:26,372 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:15:26,550 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:27,937 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:15:28,557 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:30,562 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:32,571 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:33,304 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:15:33,780 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:15:34,585 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:36,593 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:38,401 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:15:38,595 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:40,606 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:41,370 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:15:41,371 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:15:41,371 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:15:42,621 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:43,693 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:15:44,638 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:46,640 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:48,642 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:48,806 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:15:50,644 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:52,647 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:54,076 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:15:54,653 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:56,370 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:15:56,372 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:15:56,372 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:15:56,664 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:58,673 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:15:59,114 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:16:00,682 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:02,685 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:03,780 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:16:04,121 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:16:04,688 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:06,697 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:08,701 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:09,293 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:16:10,703 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:11,370 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:16:11,372 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:16:11,372 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:16:12,710 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:14,561 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:16:14,714 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:16,716 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:18,721 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:19,755 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:16:20,736 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:22,753 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:24,754 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:24,875 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:16:26,370 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:16:26,372 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:16:26,372 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:16:26,760 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:28,767 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:29,898 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:16:30,775 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:32,785 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:33,781 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:16:34,789 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:35,268 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:16:36,791 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:38,793 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:40,616 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:16:40,797 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:41,370 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:16:41,372 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:16:41,372 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:16:42,802 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:44,812 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:45,959 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:16:46,818 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:48,820 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:50,822 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:51,240 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:16:52,824 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:54,826 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:56,370 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:16:56,372 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:16:56,372 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:16:56,693 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:16:56,828 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:16:58,837 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:00,848 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:01,752 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:17:02,850 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:03,782 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:17:04,856 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:06,861 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:06,985 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:17:08,863 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:10,869 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:11,371 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:17:11,372 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:17:11,373 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:17:12,137 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:17:12,878 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:14,895 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:16,901 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:17,155 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:17:18,909 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:20,921 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:22,391 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:17:22,928 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:24,944 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:26,372 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-14 23:17:26,373 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-14 23:17:26,373 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: stop_status
+2023-11-14 23:17:26,952 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:27,691 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:17:28,897 DEBUG   SenderThread:796477 [sender.py:send():380] send: exit
+2023-11-14 23:17:28,897 INFO    SenderThread:796477 [sender.py:send_exit():585] handling exit code: 255
+2023-11-14 23:17:28,897 INFO    SenderThread:796477 [sender.py:send_exit():587] handling runtime: 865
+2023-11-14 23:17:28,961 INFO    SenderThread:796477 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-14 23:17:28,961 INFO    SenderThread:796477 [sender.py:send_exit():593] send defer
+2023-11-14 23:17:28,961 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: defer
+2023-11-14 23:17:28,961 INFO    HandlerThread:796477 [handler.py:handle_request_defer():172] handle defer: 0
+2023-11-14 23:17:28,961 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: defer
+2023-11-14 23:17:28,961 INFO    SenderThread:796477 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-11-14 23:17:28,961 INFO    SenderThread:796477 [sender.py:transition_state():613] send defer: 1
+2023-11-14 23:17:28,961 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: defer
+2023-11-14 23:17:28,961 INFO    HandlerThread:796477 [handler.py:handle_request_defer():172] handle defer: 1
+2023-11-14 23:17:28,962 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: defer
+2023-11-14 23:17:28,962 INFO    SenderThread:796477 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-11-14 23:17:28,962 INFO    SenderThread:796477 [sender.py:transition_state():613] send defer: 2
+2023-11-14 23:17:28,962 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: defer
+2023-11-14 23:17:28,962 INFO    HandlerThread:796477 [handler.py:handle_request_defer():172] handle defer: 2
+2023-11-14 23:17:28,962 INFO    HandlerThread:796477 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-14 23:17:28,962 DEBUG   SystemMonitor:796477 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-14 23:17:28,963 INFO    HandlerThread:796477 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-14 23:17:28,963 DEBUG   SystemMonitor:796477 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-14 23:17:28,963 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:28,963 INFO    HandlerThread:796477 [interfaces.py:finish():202] Joined disk monitor
+2023-11-14 23:17:28,964 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_created():271] file/dir created: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/wandb-summary.json
+2023-11-14 23:17:29,081 INFO    HandlerThread:796477 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-14 23:17:29,082 INFO    HandlerThread:796477 [interfaces.py:finish():202] Joined memory monitor
+2023-11-14 23:17:29,082 INFO    HandlerThread:796477 [interfaces.py:finish():202] Joined network monitor
+2023-11-14 23:17:29,082 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: defer
+2023-11-14 23:17:29,082 INFO    SenderThread:796477 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-11-14 23:17:29,082 INFO    SenderThread:796477 [sender.py:transition_state():613] send defer: 3
+2023-11-14 23:17:29,082 DEBUG   SenderThread:796477 [sender.py:send():380] send: stats
+2023-11-14 23:17:29,083 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: defer
+2023-11-14 23:17:29,083 INFO    HandlerThread:796477 [handler.py:handle_request_defer():172] handle defer: 3
+2023-11-14 23:17:29,083 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: defer
+2023-11-14 23:17:29,083 INFO    SenderThread:796477 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-11-14 23:17:29,083 INFO    SenderThread:796477 [sender.py:transition_state():613] send defer: 4
+2023-11-14 23:17:29,083 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: defer
+2023-11-14 23:17:29,083 INFO    HandlerThread:796477 [handler.py:handle_request_defer():172] handle defer: 4
+2023-11-14 23:17:29,084 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: defer
+2023-11-14 23:17:29,084 INFO    SenderThread:796477 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-11-14 23:17:29,084 INFO    SenderThread:796477 [sender.py:transition_state():613] send defer: 5
+2023-11-14 23:17:29,084 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: defer
+2023-11-14 23:17:29,084 INFO    HandlerThread:796477 [handler.py:handle_request_defer():172] handle defer: 5
+2023-11-14 23:17:29,084 DEBUG   SenderThread:796477 [sender.py:send():380] send: summary
+2023-11-14 23:17:29,103 INFO    SenderThread:796477 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-14 23:17:29,103 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: defer
+2023-11-14 23:17:29,103 INFO    SenderThread:796477 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-11-14 23:17:29,103 INFO    SenderThread:796477 [sender.py:transition_state():613] send defer: 6
+2023-11-14 23:17:29,103 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: defer
+2023-11-14 23:17:29,103 INFO    HandlerThread:796477 [handler.py:handle_request_defer():172] handle defer: 6
+2023-11-14 23:17:29,103 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: defer
+2023-11-14 23:17:29,103 INFO    SenderThread:796477 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-11-14 23:17:29,103 INFO    SenderThread:796477 [sender.py:transition_state():613] send defer: 7
+2023-11-14 23:17:29,103 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: status_report
+2023-11-14 23:17:29,104 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: defer
+2023-11-14 23:17:29,104 INFO    HandlerThread:796477 [handler.py:handle_request_defer():172] handle defer: 7
+2023-11-14 23:17:29,104 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: defer
+2023-11-14 23:17:29,104 INFO    SenderThread:796477 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-11-14 23:17:29,896 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-14 23:17:29,963 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/wandb-summary.json
+2023-11-14 23:17:30,973 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:31,594 INFO    SenderThread:796477 [sender.py:transition_state():613] send defer: 8
+2023-11-14 23:17:31,594 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: poll_exit
+2023-11-14 23:17:31,594 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: defer
+2023-11-14 23:17:31,595 INFO    HandlerThread:796477 [handler.py:handle_request_defer():172] handle defer: 8
+2023-11-14 23:17:31,595 DEBUG   SenderThread:796477 [sender.py:send_request():407] send_request: defer
+2023-11-14 23:17:31,595 INFO    SenderThread:796477 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-11-14 23:17:31,595 INFO    SenderThread:796477 [job_builder.py:build():281] Attempting to build job artifact
+2023-11-14 23:17:31,604 INFO    SenderThread:796477 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-11-14 23:17:31,606 INFO    SenderThread:796477 [job_builder.py:build():369] adding wandb-job metadata file
+2023-11-14 23:17:31,621 INFO    SenderThread:796477 [sender.py:transition_state():613] send defer: 9
+2023-11-14 23:17:31,622 DEBUG   HandlerThread:796477 [handler.py:handle_request():146] handle_request: defer
+2023-11-14 23:17:31,622 INFO    HandlerThread:796477 [handler.py:handle_request_defer():172] handle defer: 9
+2023-11-14 23:17:31,622 DEBUG   SenderThread:796477 [sender.py:send():380] send: artifact
+2023-11-14 23:17:31,973 INFO    Thread-12 :796477 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:33,164 WARNING StreamThr :796477 [internal.py:is_dead():414] Internal process exiting, parent pid 796264 disappeared
+2023-11-14 23:17:33,164 ERROR   StreamThr :796477 [internal.py:wandb_internal():152] Internal process shutdown.
+2023-11-14 23:17:33,330 INFO    SenderThread:796477 [sender.py:send_artifact():1456] sent artifact job-https___github.com_WongKinYiu_yolov7.git_train_aux.py - {'id': 'QXJ0aWZhY3Q6NjM4MTk1MTM1', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExMjgwMzY1Mg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjM4MTk1MTM1', 'versionIndex': 12}}}
+2023-11-14 23:17:33,330 INFO    SenderThread:796477 [sender.py:finish():1534] shutting down sender
+2023-11-14 23:17:33,330 INFO    SenderThread:796477 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-11-14 23:17:33,622 INFO    HandlerThread:796477 [handler.py:finish():866] shutting down handler
+2023-11-14 23:17:33,622 INFO    WriterThread:796477 [datastore.py:close():294] close: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/run-hxh1qgrq.wandb
+2023-11-14 23:17:33,975 INFO    SenderThread:796477 [dir_watcher.py:finish():388] scan: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files
+2023-11-14 23:17:33,975 INFO    SenderThread:796477 [dir_watcher.py:finish():402] scan save: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/conda-environment.yaml conda-environment.yaml
+2023-11-14 23:17:33,975 INFO    SenderThread:796477 [dir_watcher.py:finish():402] scan save: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/config.yaml config.yaml
+2023-11-14 23:17:33,975 INFO    SenderThread:796477 [dir_watcher.py:finish():402] scan save: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/wandb-summary.json wandb-summary.json
+2023-11-14 23:17:33,976 INFO    SenderThread:796477 [dir_watcher.py:finish():402] scan save: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log output.log
+2023-11-14 23:17:33,978 INFO    SenderThread:796477 [dir_watcher.py:finish():402] scan save: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/requirements.txt requirements.txt
+2023-11-14 23:17:33,978 INFO    SenderThread:796477 [dir_watcher.py:finish():402] scan save: /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/wandb-metadata.json wandb-metadata.json
+2023-11-14 23:17:33,978 INFO    SenderThread:796477 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-14 23:17:33,978 INFO    SenderThread:796477 [file_pusher.py:join():181] waiting for file pusher
+2023-11-14 23:17:39,749 INFO    wandb-upload_1:796477 [upload_job.py:push():131] Uploaded file /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/config.yaml
+2023-11-14 23:17:44,763 INFO    wandb-upload_2:796477 [upload_job.py:push():131] Uploaded file /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/wandb-summary.json
+2023-11-14 23:17:44,763 INFO    wandb-upload_4:796477 [upload_job.py:push():131] Uploaded file /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/requirements.txt
+2023-11-14 23:17:44,767 INFO    wandb-upload_0:796477 [upload_job.py:push():131] Uploaded file /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/conda-environment.yaml
+2023-11-14 23:17:44,768 INFO    wandb-upload_3:796477 [upload_job.py:push():131] Uploaded file /home/vivek.trivedi/yolov7/wandb/run-20231114_230259-hxh1qgrq/files/output.log
+2023-11-14 23:17:44,991 INFO    SenderThread:796477 [file_stream.py:finish():595] file stream finish called
+2023-11-14 23:17:46,066 INFO    SenderThread:796477 [file_stream.py:finish():599] file stream finish is done
